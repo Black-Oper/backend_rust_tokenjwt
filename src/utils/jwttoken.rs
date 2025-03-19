@@ -3,7 +3,7 @@ use crate::utils::hmac::compute_hmac;
 use crate::database::structs::User;
 use crate::utils::decodificar::decode_base64;
 
-const KEY: &[u8] = b"minha_chave_secreta";
+const KEY: &[u8] = b"jeonjungkook";
 
 pub fn verify_jwt_token(token: &str) -> Result<User, String> {
     // Espera que o token esteja no formato "header.payload.signature"
